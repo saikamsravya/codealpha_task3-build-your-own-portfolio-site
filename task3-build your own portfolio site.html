@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sravya Portfolio</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+    scroll-behavior:smooth;
+}
+body{
+    background:#0f172a;
+    color:white;
+}
+/* NAVBAR */
+nav{
+   width:100%;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+}
+nav ul li{
+    margin-left:25px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+nav ul li a:hover{
+    color:#38bdf8;
+}
+/* HERO SECTION */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+.hero h1{
+    font-size:75px;
+    margin-bottom:15px;
+}
+.hero span{
+    color:#38bdf8;
+}
+.hero p{
+    font-size:24px;
+    color:#cbd5e1;
+}
+/* SECTION */
+section{
+    padding:100px 10%;
+}
+.title{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
+/* ABOUT */
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+.about p{
+    font-size:20px;
+    line-height:1.8;
+    color:#cbd5e1;
+}
+/* SKILLS */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+.skill-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+.skill-card:hover{
+    transform:translateY(-10px);
+    background:#38bdf8;
+}
+.skill-card h2{
+    margin-bottom:15px;
+    font-size:28px;
+}
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+.project-card{
+    background:#1e293b;
+    padding:35px;
+    border-radius:25px;
+    transition:0.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    border:2px solid transparent;
+}
+.project-card:hover{
+    transform:translateY(-12px);
+    border-color:#38bdf8;
+    box-shadow:0 0 20px #38bdf8;
+}
+.project-content h2{
+    margin-bottom:15px;
+    color:#38bdf8;
+    font-size:28px;
+}
+.project-content p{
+    color:#cbd5e1;
+    line-height:1.7;
+    font-size:17px;
+}
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+.contact p{
+    margin:15px;
+    font-size:20px;
+    color:#cbd5e1;
+}
+.contact button{
+    margin-top:20px;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#38bdf8;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.contact button:hover{
+    background:#0284c7;
+    transform:scale(1.1);
+}
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    color:#94a3b8;
+}
+</style>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav>
+<div class="logo">Saikam Sravya</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+<h1>Hello, I'm <span>Saikam Sravya</span></h1>
+<p>Aspiring Software Developer | Web Developer</p>
+</section>
+<!-- ABOUT -->
+<section id="about">
+<h1 class="title">About Me</h1>
+<div class="about">
+<p>
+I am a passionate Computer Science student interested in Web Development and Software Development.
+I enjoy building responsive and interactive websites with modern UI designs.
+</p>
+</div>
+</section>
+<!-- SKILLS -->
+<section id="skills">
+<h1 class="title">My Skills</h1>
+<div class="skills">
+<div class="skill-card">
+<h2>HTML</h2>
+<p>Responsive Website Design</p>
+</div>
+<div class="skill-card">
+<h2>CSS</h2>
+<p>Modern UI Styling</p>
+</div>
+<div class="skill-card">
+<h2>JavaScript</h2>
+<p>Interactive Web Development</p>
+</div>
+<div class="skill-card">
+<h2>Java</h2>
+<p>Object Oriented Programming</p>
+</div>
+<div class="skill-card">
+<h2>C</h2>
+<p>Programming Fundamentals</p>
+</div>
+<div class="skill-card">
+<h2>C++</h2>
+<p>Problem Solving Skills</p>
+</div>
+</div>
+</section>
+<!-- PROJECTS -->
+<section id="projects">
+<h1 class="title">Projects</h1>
+<div class="projects">
+<div class="project-card">
+<div class="project-content">
+<h2>Fake QR Detection</h2>
+<p>
+Cybersecurity based project for detecting fake payment QR codes and improving transaction safety.
+</p>
+</div>
+</div>
+<div class="project-card">
+<div class="project-content">
+<h2>Voice Recognizer</h2>
+<p>
+Voice recognition project for identifying and processing speech commands efficiently.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section id="contact">
+<h1 class="title">Contact Me</h1>
+<div class="contact">
+<p>📧 saikamsravya@gmail.com</p>
+<p>📍 Andhra Pradesh, India</p>
+<button>Contact Me</button>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+© 2026 Sravya Portfolio | All Rights Reserved
+</footer>
+</body>
+</html>
